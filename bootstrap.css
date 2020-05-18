@@ -7,7 +7,7 @@
 :root {
   --blue: #007bff;
   --indigo: #6610f2;
-  --purple: #6f42c1;
+  --purple: #b786f7;
   --pink: #e83e8c;
   --red: #dc3545;
   --orange: #fd7e14;
@@ -19,9 +19,9 @@
   --gray: #6c757d;
   --gray-dark: #343a40;
   --primary: #6f42c1;
-  --secondary: #6c757d;
-  --success: #2ecc71;
-  --info: #17a2b8;
+  --secondary: #000000;
+  --success: #b786f7;
+  --info: #e9ecef;
   --warning: #ffc107;
   --danger: #dc3545;
   --light: #f8f9fa;
@@ -6737,33 +6737,33 @@ button.bg-primary:focus {
 }
 
 .bg-secondary {
-  background-color: #6c757d !important;
+  background-color: #000000 !important;
 }
 
 a.bg-secondary:hover, a.bg-secondary:focus,
 button.bg-secondary:hover,
 button.bg-secondary:focus {
-  background-color: #545b62 !important;
+  background-color: ##000000 !important;
 }
 
 .bg-success {
-  background-color: #28a745 !important;
+  background-color: #b786f7 !important;
 }
 
 a.bg-success:hover, a.bg-success:focus,
 button.bg-success:hover,
 button.bg-success:focus {
-  background-color: #1e7e34 !important;
+  background-color: #b786f7 !important;
 }
 
 .bg-info {
-  background-color: #17a2b8 !important;
+  background-color: #e9ecef !important;
 }
 
 a.bg-info:hover, a.bg-info:focus,
 button.bg-info:hover,
 button.bg-info:focus {
-  background-color: #117a8b !important;
+  background-color: #e9ecef !important;
 }
 
 .bg-warning {
