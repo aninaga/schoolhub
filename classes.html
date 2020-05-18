@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>repl.it</title>
+	<link href="bootstrap.css" rel="stylesheet" type="text/css" />
+	<style>
+		/* Popup */
+		.popup {
+			position: relative;
+			display: inline-block;
+			cursor: pointer;
+			-webkit-user-select: none;
+			-moz-user-select: none;
+			-ms-user-select: none;
+			user-select: none;
+		}
+
+		/* The actual popup */
+		.popup .popuptext {
+			visibility: hidden;
+			width: 160px;
+			background-color: #555;
+			color: #fff;
+			text-align: center;
+			border-radius: 6px;
+			padding: 8px 0;
+			position: absolute;
+			z-index: 1;
+			bottom: 125%;
+			left: 50%;
+			margin-left: -80px;
+		}
+
+		/* Popup arrow */
+		.popup .popuptext::after {
+			content: "";
+			position: absolute;
+			top: 100%;
+			left: 50%;
+			margin-left: -5px;
+			border-width: 5px;
+			border-style: solid;
+			border-color: #555 transparent transparent transparent;
+		}
+
+		/* Toggle this class - hide and show the popup */
+		.popup .show {
+			visibility: visible;
+			-webkit-animation: fadeIn 1s;
+			animation: fadeIn 1s;
+		}
+
+		/* Add animation (fade in the popup) */
+		@-webkit-keyframes fadeIn {
+			from {
+				opacity: 0;
+			}
+			to {
+				opacity: 1;
+			}
+		}
+
+		@keyframes fadeIn {
+			from {
+				opacity: 0;
+			}
+			to {
+				opacity: 1;
+			}
+		}
+	</style>
+</head>
+<nav class="nav nav-pills nav-fill navbar">
+	<a class="navbar-brand">SchoolHub</a>
+	<a class="nav-item nav-link grow text-primary" href="announcements.html">Announcements</a>
+	<a class="nav-item nav-link active grow bg-primary" href="classes.html">Classes</a>
+	<a class="nav-item nav-link grow text-primary" href="messages.html">Messages</a>
+	<a class="nav-item nav-link grow text-primary" href="account.html">Account</a>
+</nav>
+<!--Jumbotron-->
+<div class="jumbotron rounded-pill">
+	<div class="container">
+		<h1 class="display-3 ">Classes</h1>
+    <h3 class="font-weight-light">Semester 2 Course Schedule</h3>
+    <p class="font-italic">(3/19-5/30)</p>
+		<img src="" class="rounded float-right">
+    </div>
+  </div>
+  <!---Container-->
+  <div class="container">
+<!-- Example row of columns -->
+<div class="row">
+  <div class="col-md-4 border border-dark">
+    <h2>Physics 101</h2>
+    <h4>Monday 7:30-8:30</h4>
+    <body style="text-align:center">
+<div class="popup btn text-primary font-weight-bold" onclick="myFunction()">Course Information
+  <span class="popuptext" id="myPopup">
+    Grade: 90.21%</span>
+</div>
+<p><a class="font-weight-bold text-secondary" href="messages.html">Get help &raquo;</a></p>
+<script>
+// When the user clicks on div, open the popup
+function myFunction() {
+  var popup = document.getElementById("myPopup");
+  popup.classList.toggle("show");
+}
+</script>
+  </div>
+  <div class="col-md-4 border border-dark">
+    <h2>English 101</h2>
+    <h4>Wednesday 5:30-6:45</h4>
+    <div class="popup btn text-primary font-weight-bold" onclick="myFunction2()">Course Information
+  <span class="popuptext" id="myPopup2">
+    Grade: 88.51%</span>
+  </div>
+  <p><a class="font-weight-bold text-secondary" href="messages.html">Get help &raquo;</a></p>
+  <script>
+// When the user clicks on div, open the popup
+function myFunction2() {
+  var popup = document.getElementById("myPopup2");
+  popup.classList.toggle("show");
+}
+</script>
+  </div>
+  <div class="col-md-4 border border-dark">
+    <h2>Computer Science Theory</h2>
+    <h4>Wednesday 4:45-7:00</h4>
+   <div class="popup btn text-primary font-weight-bold" onclick="myFunction3()">Course Information
+  <span class="popuptext" id="myPopup3">
+Grade: 99.51%</span>
+  </div>
+  <p><a class="font-weight-bold text-secondary" href="messages.html">Get help &raquo;</a></p>
+   <script>
+// When the user clicks on div, open the popup
+function myFunction3() {
+  var popup = document.getElementById("myPopup3");
+  popup.classList.toggle("show");
+}
+</script>
+</div>
+  <div class="col-md-4 border border-dark">
+    <h2>Computer Graphics Manufacturing </h2>
+    <h4>Thursday 12:00-1:30</h4>
+    <div class="popup btn text-primary font-weight-bold" onclick="myFunction4()">Course Information
+  <span class="popuptext" id="myPopup4">
+Grade: 66.91%</span>
+  </div>
+  <p><a class="font-weight-bold text-secondary" href="messages.html">Get help &raquo;</a></p>
+   <script>
+// When the user clicks on div, open the popup
+function myFunction4() {
+  var popup = document.getElementById("myPopup4");
+  popup.classList.toggle("show");
+}
+</script>
+</div>
+
+  <div class="col-md-4 border border-dark">
+    <h2>Calculus II</h2>
+    <h4>Thursday 2:00-3:45</h4>
+   <div class="popup btn text-primary font-weight-bold" onclick="myFunction5()">Course Information
+  <span class="popuptext" id="myPopup5">
+Grade: 84.35%</span>
+  </div>
+  <p><a class="font-weight-bold text-secondary" href="messages.html">Get help &raquo;</a></p>
+  <script>
+// When the user clicks on div, open the popup
+function myFunction5() {
+  var popup = document.getElementById("myPopup5");
+  popup.classList.toggle("show");
+}
+</script>
+</div>
+  <div class="col-md-4 border border-dark">
+    <h2>Biology 101</h2>
+    <h4>Friday 2:30-4:00</h4>
+   <div class="popup btn text-primary font-weight-bold" onclick="myFunction6()">Course Information
+  <span class="popuptext" id="myPopup6">
+Grade: 54.35%</span> 
+  </div>
+  <p><a class="font-weight-bold text-secondary" href="messages.html">Get help &raquo;</a></p>
+  <script>
+// When the user clicks on div, open the popup
+function myFunction6() {
+  var popup = document.getElementById("myPopup6");
+  popup.classList.toggle("show");
+}
+</script>
+</div>
+
+    </body>
+      <script type="text/javascript" src="js/scripts.js" async></script>
+</html>
